@@ -378,3 +378,5 @@ foreach (var bbox in boundingBoxes)
     // Use normalizedBbox for rendering
 }
 
+_logger.LogInformation($"Raw Bounding Box: X={bbox.X}, Y={bbox.Y}, Width={bbox.Width}, Height={bbox.Height}");
+
