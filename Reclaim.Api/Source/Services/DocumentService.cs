@@ -372,4 +372,9 @@ private BoundingBox NormalizeBoundingBox(BoundingBox bbox, float pageWidth, floa
         Height = bbox.Height / pageHeight
     };
 }
+foreach (var bbox in boundingBoxes)
+{
+    var normalizedBbox = NormalizeBoundingBox(bbox, pageWidth, pageHeight);
+    // Use normalizedBbox for rendering
+}
 
