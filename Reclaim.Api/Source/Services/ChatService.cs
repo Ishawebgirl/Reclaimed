@@ -121,3 +121,30 @@ public class ChatService : BaseService
         return assistantMessage;
     }
 }
+var messages = new List<ChatMessage>();
+
+// Add system message for context
+messages.Add(new ChatMessage
+{
+    Role = "system",
+    Content = "You are a property claims assistant. Keep responses factual and based on the provided document."
+});
+
+// Add previous conversation history
+foreach (var exchange in conversationHistory)
+{
+    messages.Add(new ChatMessage { Role = "user", Content = exchange.UserMessage });
+    messages.Add(new ChatMessage { Role = "assistant", Content = exchange.BotResponse });
+}
+
+// Add the latest user message
+messages.Add(new ChatMessage { Role = "user", Content = userInput });
+
+// Send the request to Azure OpenAI
+var chatCompletion = await _openAiClient.GetChatCompletionAsync(messages);
+
+const int maxMessages = 10;
+if (messages.Count > maxMessages)
+{
+    messages = messages.Skip(messages.Count - maxMessages).ToList();
+}
