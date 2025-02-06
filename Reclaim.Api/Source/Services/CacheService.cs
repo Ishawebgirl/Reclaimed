@@ -1,11 +1,18 @@
-﻿using Microsoft.Extensions.Caching.Distributed;
+using Microsoft.Extensions.Logging;
+using Newtonsoft.Json; // If using JsonConvert for logging
+using System.Text.Json; // Alternative JSON library
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+using Microsoft.Extensions.Caching.Distributed;
 using Newtonsoft.Json;
 using Reclaim.Api.Model;
 using System.Runtime.Caching;
 using System.Text;
 
 namespace Reclaim.Api.Services;
-
+string userInput = question;
+List<ChatExchange> conversationHistory = new List<ChatExchange>();
 public class CacheService
 {
     private readonly DatabaseContext _db;
@@ -122,6 +129,13 @@ public class CacheService
         return loaded;
     }
 
+ private readonly OpenAiClient _openAiClient;
+
+public ChatService(OpenAiClient openAiClient)
+{
+    _openAiClient = openAiClient;
+}
+   
     private async Task<T> GetFromDatabase<T>(string fullKey)
     {
         var item = await _distributedCache.GetAsync(fullKey);
@@ -152,6 +166,7 @@ public class CacheService
         if (!writeToDistributedSqlServerCache)
             return;
 
+    
         var serialized = JsonConvert.SerializeObject(value, new JsonSerializerSettings { ReferenceLoopHandling = ReferenceLoopHandling.Ignore });
         var encoded = Encoding.ASCII.GetBytes(serialized);
 
@@ -170,3 +185,4 @@ public class CacheService
         }
     }
 }
+     
