@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "F:\\dev\\upwork(us)\\Reclaim.Api\\Tests\\Tests.csproj": {}
+    "F:\\dev\\upwork(us)\\freelancer_project\\Reclaim.Api\\Tests\\Tests.csproj": {}
   },
   "projects": {
-    "F:\\dev\\upwork(us)\\Reclaim.Api\\Tests\\Tests.csproj": {
+    "F:\\dev\\upwork(us)\\freelancer_project\\Reclaim.Api\\Tests\\Tests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\dev\\upwork(us)\\Reclaim.Api\\Tests\\Tests.csproj",
+        "projectUniqueName": "F:\\dev\\upwork(us)\\freelancer_project\\Reclaim.Api\\Tests\\Tests.csproj",
         "projectName": "Tests",
-        "projectPath": "F:\\dev\\upwork(us)\\Reclaim.Api\\Tests\\Tests.csproj",
+        "projectPath": "F:\\dev\\upwork(us)\\freelancer_project\\Reclaim.Api\\Tests\\Tests.csproj",
         "packagesPath": "C:\\Users\\COM64\\.nuget\\packages\\",
-        "outputPath": "F:\\dev\\upwork(us)\\Reclaim.Api\\Tests\\obj\\",
+        "outputPath": "F:\\dev\\upwork(us)\\freelancer_project\\Reclaim.Api\\Tests\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\COM64\\AppData\\Roaming\\NuGet\\NuGet.Config"

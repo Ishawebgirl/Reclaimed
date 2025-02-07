@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "gjxY1N6b/p0=",
+  "dgSpecHash": "c/ibcw+Rwdk=",
   "success": true,
-  "projectFilePath": "F:\\dev\\upwork(us)\\Reclaim.Api\\Source\\Source.csproj",
+  "projectFilePath": "F:\\dev\\upwork(us)\\freelancer_project\\Reclaim.Api\\Source\\Source.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\COM64\\.nuget\\packages\\asyncstacktraceex\\1.0.1.1\\asyncstacktraceex.1.0.1.1.nupkg.sha512",
     "C:\\Users\\COM64\\.nuget\\packages\\azure.ai.documentintelligence\\1.0.0\\azure.ai.documentintelligence.1.0.0.nupkg.sha512",

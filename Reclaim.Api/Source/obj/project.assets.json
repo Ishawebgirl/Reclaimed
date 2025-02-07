@@ -9418,11 +9418,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\dev\\upwork(us)\\Reclaim.Api\\Source\\Source.csproj",
+      "projectUniqueName": "F:\\dev\\upwork(us)\\freelancer_project\\Reclaim.Api\\Source\\Source.csproj",
       "projectName": "Source",
-      "projectPath": "F:\\dev\\upwork(us)\\Reclaim.Api\\Source\\Source.csproj",
+      "projectPath": "F:\\dev\\upwork(us)\\freelancer_project\\Reclaim.Api\\Source\\Source.csproj",
       "packagesPath": "C:\\Users\\COM64\\.nuget\\packages\\",
-      "outputPath": "F:\\dev\\upwork(us)\\Reclaim.Api\\Source\\obj\\",
+      "outputPath": "F:\\dev\\upwork(us)\\freelancer_project\\Reclaim.Api\\Source\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\COM64\\AppData\\Roaming\\NuGet\\NuGet.Config"
