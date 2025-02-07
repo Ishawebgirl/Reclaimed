@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "kGOea0ricYc=",
+  "dgSpecHash": "4WazVDGHOMw=",
   "success": true,
-  "projectFilePath": "F:\\dev\\upwork(us)\\Reclaim.Api\\Tests\\Tests.csproj",
+  "projectFilePath": "F:\\dev\\upwork(us)\\freelancer_project\\Reclaim.Api\\Tests\\Tests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\COM64\\.nuget\\packages\\argon\\0.24.2\\argon.0.24.2.nupkg.sha512",
     "C:\\Users\\COM64\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
