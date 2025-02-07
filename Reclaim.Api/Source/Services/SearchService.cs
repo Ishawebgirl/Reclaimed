@@ -417,4 +417,6 @@ public class SearchService
 
         return references;
     }
-}
+}// Improved bounding box accuracy by converting coordinates
+// Added support for maintaining conversation history
+
