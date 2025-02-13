@@ -362,21 +362,3 @@ public class DocumentService : BaseService
         throw new NotImplementedException();
     }
 }
-private BoundingBox NormalizeBoundingBox(BoundingBox bbox, float pageWidth, float pageHeight)
-{
-    return new BoundingBox
-    {
-        X = bbox.X / pageWidth,
-        Y = bbox.Y / pageHeight,
-        Width = bbox.Width / pageWidth,
-        Height = bbox.Height / pageHeight
-    };
-}
-foreach (var bbox in boundingBoxes)
-{
-    var normalizedBbox = NormalizeBoundingBox(bbox, pageWidth, pageHeight);
-    // Use normalizedBbox for rendering
-}
-
-_logger.LogInformation($"Raw Bounding Box: X={bbox.X}, Y={bbox.Y}, Width={bbox.Width}, Height={bbox.Height}");
-
